@@ -15,9 +15,10 @@ const SignUp = () => {
     const {fullname, email, username, password, number} = formField;
     const navigate = useNavigate()
     const {Login, Logout} = useContext(AuthContext)
+
     const resetForm = () => {
         setForm(defaultForm)
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -27,7 +28,7 @@ const SignUp = () => {
         Login()
         navigate('/')
         
-    }
+    };
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -44,7 +45,7 @@ const SignUp = () => {
                 <input type="number" placeholder="Phone" name="number" value={number} onChange={handleChange} required />
                 <input type="password" placeholder="paasword" name="password" value={password} required onChange={handleChange} />
                 <button>SEND</button>
-                <p onClick={() => navigate('/')}>Member already? Login</p>
+                <p onClick={() => navigate('/')} className="handle-button">Member already? Login</p>
             </form>
         </div>
     )

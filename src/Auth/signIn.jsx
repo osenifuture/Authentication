@@ -11,10 +11,11 @@ const SignIn = () => {
     const [formField, setForm] = useState(defaultForm);
     const { email, password} = formField;
     const naviagte = useNavigate()
-    const {Login}  = useContext(AuthContext)
+    const {Login}  = useContext(AuthContext);
+
     const resetForm = () => {
         setForm(defaultForm)
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,12 +23,12 @@ const SignIn = () => {
         resetForm()
         Login()
         naviagte('/')
-    }
+    };
 
     const handleChange = (e) => {
         const {name, value} = e.target;
         setForm({...formField, [name] : value})
-    }
+    };
 
     const handleNav = () => {
         naviagte('/SignUp')
@@ -40,10 +41,10 @@ const SignIn = () => {
             <input type="email" placeholder="Email" name="email" value={email} onChange={handleChange} required />
             <input type="password" placeholder="paasword" name="password" value={password} onChange={handleChange} required />
             <button>Login</button>
-            <p onClick={handleNav}>Not Register yet? </p>
+            <p onClick={handleNav} className="handle-button">Not Register yet? </p>
         </form>
     </div>
-    )
-}
+    );
+};
 
-export default SignIn
+export default SignIn;

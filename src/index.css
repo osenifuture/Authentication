@@ -1,18 +1,18 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-*{
+* {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
@@ -20,26 +20,46 @@ code {
 }
 
 .nav-container {
-  width: 100%;
-  height: 60px;
+  width: 15%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: blueviolet;
+  flex-direction: column;
+  position: fixed;
+  overflow: auto;
+  top: 0%;
 }
 
 .logo > p {
-  color:white;
+  color: white;
   font-weight: bolder;
 }
 
-.nav-links {
+.logo{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-links > .link {
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.nav-link > .link {
   margin: 8px;
-  color: white;
+  color: black;
+  padding: 10px;
+}
+
+.link:hover {
+  background-color: white;
+  border-radius: 3px;
 }
 
 span {
@@ -73,7 +93,7 @@ span {
   border-radius: 8px;
 }
 
-.form-container > form  > p {
+.form-container > form > p {
   margin: 8px;
 }
 
@@ -96,8 +116,61 @@ span {
   cursor: pointer;
 }
 
-@media screen and (max-width:650px) {
+.handle-button {
+  cursor: pointer;
+}
+
+.link{
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
   .form-container > form {
     width: 97%;
   }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile-link {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+    position: absolute;
+    flex-direction: column;
+  }
+
+  .nav-container {
+    width: 25%;
+  }
+
+  .fa-xmark {
+    display: none;
+  }
+
+   .link{
+    padding: 10px;
+    color: white;
+  }
+
+  span{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
