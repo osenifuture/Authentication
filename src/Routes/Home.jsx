@@ -26,7 +26,7 @@ const Home = () => {
                 </div>
                 <div className="home-box">
                     <i class="fa-solid fa-house"></i>
-                    <p>Offices Rentage</p>
+                    <p> Rentage</p>
                 </div>
                 <div className="home-box">
                     <i class="fa-solid fa-car-side"></i>
@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
                 <div className="home-box">
                     <i class="fa-solid fa-plane"></i>
-                    <p>Travelling Agent</p>
+                    <p>Travel Agent</p>
                 </div>
                 <div className="home-box">
                     <i class="fa-solid fa-video"></i>
