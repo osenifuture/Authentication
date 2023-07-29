@@ -37,7 +37,7 @@ const Price = () => {
                 </li>
                 <li>
             <Link className="price-link">
-               <p> Jamb, UTME Registration</p>
+               <p>  UTME Registration</p>
                 <i className="fa-solid fa-user-graduate"></i>
                  </Link>
                 </li>
