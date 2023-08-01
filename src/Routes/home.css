@@ -157,7 +157,6 @@
 .service-container  {
   width: 100%;
   background-image:url('https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
- 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -213,7 +212,7 @@
   }
 
   .service-container{
-    width: 70%;
-    margin-left: 27%;
+    width: 75%;
+    margin-left: 25%;
   }
 }
