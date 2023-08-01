@@ -33,7 +33,7 @@ const Navbar = () => {
            </div>
 
             <Link to='/' className="logo">
-                <i class="fa-brands fa-wordpress"></i>
+                <i className="fa-brands fa-wordpress"></i>
                 <p>WesttyCode</p>
             </Link>
             <div className={ismobile ? 'mobile-link' : 'nav-link'} onClick={closeMenu}>

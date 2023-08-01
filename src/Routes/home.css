@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 10px 0px lightgrey;
 }
 
-.home-box {
+ .home-link{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,17 +22,23 @@
   padding: 5px;
 }
 
+.fa-brands {
+  color: white;
+  font-size: 20px;
+}
+
 .fa-solid {
   color: white;
   font-size: 20px;
 }
 
-.home-box > p {
+.home-container > .home-link > p {
   color: white;
 }
 
 .home-img{
     width: 100%;
+    height: 100px;
     background-image: url('https://slidemodel.com/wp-content/uploads/20608-01-fintech-industry-powerpoint-templates-16x9-1.jpg');
     background-position: center;
     background-size: contain;
@@ -45,7 +51,7 @@
 
 }
 
-.more {
+.more-link {
   width: 75%;
   height: 90px;
   justify-content: center;
@@ -59,24 +65,16 @@
   box-shadow: 0px 0px 10px 0px grey;
 }
 
-.more > .more-link > p {
+ .more-link > p {
   color: white;
 }
 
-.easy-con {
-  width: 75%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-direction: column;
-}
 
 
-.easy-con > h2 {
+.home-img > h2 {
   color: white;
-  font-size: 30px;
+  font-size: 50px;
+  margin-top: 40px;
 }
 
 .about-container {
@@ -103,13 +101,12 @@
 
 .price-container {
   width: 75%;
-  height: 300px;
   background-color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 7fr);
   margin-left: 20%;
-  padding: 30px;
+  padding: 10px;
+  flex-direction: column;
 }
 
 
@@ -134,12 +131,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:lightgray;
+    margin: 3px;
+    padding: 5px;
     gap: 10px;
+    border-radius: 5px;
+    
 }
 
 .price-link > .fa-solid{
     color: blueviolet;
     font-size: 15px;
+}
+
+.service-container > .form-container > form{
+  box-shadow: 0px 0px 10px 0px blueviolet;
+  margin: 10px 0px;
+}
+
+.form-container > h2{
+  color: blueviolet;
+  text-shadow: 2px 2px 2px white;
+}
+
+.service-container  {
+  width: 100%;
+  background-image:url('https://images.pexels.com/photos/4482900/pexels-photo-4482900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0px;
 }
 
 
@@ -150,26 +172,19 @@
     margin-left: 27%;
   }
 
-  .more{
+  .more-link{
     width: 70%;
     margin-left: 27%;
   }
 
+ 
+.home-container > .home-link > p {
+  font-size: 10px;
+}
 
-  .home-box {
-    font-size: 10px;
-  }
-
-  .easy-con {
-    width: 70%;
-    margin-left: 27%;
-  }
-
-  .easy-con > h2{
-    font-size: 20px;
-  }
-  .easy-con > p{
-    font-size: 10px;
+  .home-img > h2{
+    font-size: 16px;
+    margin-top: 40px; 
   }
 
   .about-container {
@@ -180,6 +195,8 @@
   .price-container {
     width: 70%;
     margin-left: 27%;
+    display: grid;
+    grid-template-columns: repeat(1, 14fr);
   }
 
   .price-img{
@@ -189,5 +206,14 @@
 
   .price-img > h2{
     font-size: 30px;
+  }
+
+  .price-link{
+    width: 100%;
+  }
+
+  .service-container{
+    width: 70%;
+    margin-left: 27%;
   }
 }

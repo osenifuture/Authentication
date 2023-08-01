@@ -42,12 +42,13 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .nav-link {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 
 }
 
@@ -57,9 +58,10 @@ code {
   padding: 10px;
 }
 
-.link:hover {
+.nav-link > .link:hover {
   background-color: white;
   border-radius: 3px;
+  color:black ;
 }
 
 span {
@@ -97,12 +99,53 @@ span {
   margin: 8px;
 }
 
-.form-container > form > input {
+.form-container > form  > input {
   width: 90%;
   height: 40px;
-  margin: 8px 0px;
+  margin: 5px 0px;
   border: 1px solid lightgray;
   padding-left: 10px;
+  outline: none;
+}
+
+.pass{
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  width: 90%;
+  height: 40px;
+  padding: 0px 10px;
+  margin: 5px 0px;
+}
+
+.pass > input{
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.confirm-pass{
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  width: 90%;
+  height: 40px;
+  padding: 0px 10px;
+  margin: 5px 0px;
+}
+
+.confirm-pass > input{
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 8px 0px;
+}
+
+
+
+.fa{
+  color: blueviolet;
+  margin-top: 10px;
 }
 
 .form-container > form > button {
@@ -116,11 +159,37 @@ span {
   cursor: pointer;
 }
 
+.form-container > form > select {
+  width: 90%;
+  height: 40px;
+  border: 1px solid lightgray;
+  margin: 5px 0px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.form-container > form > textarea{
+  width: 90%;
+  height: 100px;
+  border: 1px solid lightgray;
+  margin: 5px 0px;
+  padding: 10px;
+  outline: none;
+}
+
+.form-container > form > span{
+  margin: 5px;
+}
+
+.form-container > form > span > p{
+  color: black;
+}
+
 .handle-button {
   cursor: pointer;
 }
 
-.link{
+.nav-link > .link{
   color: white;
 }
 
@@ -133,18 +202,9 @@ span {
     width: 97%;
   }
 
-  .mobile-menu {
-    display: block;
-    margin-top:20px;
 
-  }
-
-  .nav-link {
-    display: none;
-  }
-
-  .logo {
-    display: none;
+  .logo > p {
+    font-size: 10px;
   }
 
   .mobile-link {
@@ -164,19 +224,13 @@ span {
     justify-content: flex-start;
   }
 
-  .fa-xmark {
-    display: none;
-  }
-
-   .link{
-    padding: 10px;
-    color: white;
-  }
+.nav-link > .link{
+  color: white;
+}
 
   span{
     display: flex;
-    flex-direction: column;
-    margin-top: 540px;
+    margin-top: 100px;
   }
 
 }

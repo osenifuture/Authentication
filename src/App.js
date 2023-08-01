@@ -7,6 +7,7 @@ import SignIn from "./Auth/signIn";
 import SignUp from "./Auth/signup";
 import { useContext } from "react";
 import { AuthContext } from "./Context/authContext";
+import Service from "./Routes/Form";
 
 function App() {
   const { isLoggedIn } = useContext(AuthContext);
@@ -19,6 +20,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Price" element={<Price/>} />
+            <Route path="/Service" element={<Service/>} />
+
           </>
         </Route>
         ) : (
