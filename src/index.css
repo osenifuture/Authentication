@@ -124,6 +124,10 @@ span {
   border: none;
 }
 
+ .pass > span > .fa-solid{
+  color: blueviolet;
+}
+
 .confirm-pass{
   display: flex;
   gap: 5px;
@@ -133,6 +137,16 @@ span {
   padding: 0px 10px;
   margin: 5px 0px;
 }
+
+.confirm-pass > .span{
+  color: blueviolet;
+}
+
+.confirm-pass > span > .fa-solid{
+  color: blueviolet;
+}
+
+
 
 .confirm-pass > input{
   width: 100%;

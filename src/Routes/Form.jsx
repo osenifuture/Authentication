@@ -121,11 +121,11 @@ const Form = () => {
                     <textarea name="message" placeholder="BRIEF DESCRIPTION OF SERVICE THAT YOU WANT" value={message} onChange={handleChange} ></textarea>
                     <div className="pass">
                 <input  type={show ? "text"  : "password"} name="password" placeholder="PASSWORD" value={password} onChange={handleChange}  />
-                    <i onClick={handleShowpassword} className={`fa ${handleShowpassword ? "fa-eye-slash" : "fa-eye" }`}></i>
+                    <span onClick={handleShowpassword}>{ show ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i> }</span>
                     </div>
                     <div className="confirm-pass">
                 <input type={show ? "text" : "password"}  name="confirmpassword" placeholder="CONFIRM PASSWORD" value={confirmpassword} onChange={handleChange} />
-                <i onClick={handleShowpassword} className={`fa ${handleShowpassword ? "fa-eye-slash"  : "fa-eye" }`}></i>
+                <span onClick={handleShowpassword}>{ show ? <i className="fa-solid fa-eye-slash"></i>  : <i className="fa-solid fa-eye"></i> }</span>
                     </div>
                 {/* <span style={{display: "flex", }}>
                 <input type="checkbox" onClick={handleShowpassword}/> 
