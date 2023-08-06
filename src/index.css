@@ -138,9 +138,6 @@ span {
   margin: 5px 0px;
 }
 
-.confirm-pass > .span{
-  color: blueviolet;
-}
 
 .confirm-pass > span > .fa-solid{
   color: blueviolet;
@@ -155,12 +152,6 @@ span {
   margin: 8px 0px;
 }
 
-
-
-.fa{
-  color: blueviolet;
-  margin-top: 10px;
-}
 
 .form-container > form > button {
   width: 90%;
@@ -241,10 +232,5 @@ span {
 .nav-link > .link{
   color: white;
 }
-
-  span{
-    display: flex;
-    margin-top: 100px;
-  }
 
 }

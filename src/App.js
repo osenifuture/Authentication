@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { AuthContext } from "./Context/authContext";
 import Service from "./Routes/Form";
 
+
 function App() {
   const { isLoggedIn } = useContext(AuthContext);
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Price" element={<Price/>} />
             <Route path="/Service" element={<Service/>} />
+            
 
           </>
         </Route>

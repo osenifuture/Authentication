@@ -2,6 +2,7 @@
 
 const About = () => {
     return (
+        <>
         <div className="about-container">
             <h2>ALS FINTECH</h2>
             <h4>Empowering Financial Freedom through Cutting - edge Solution </h4>
@@ -19,6 +20,7 @@ const About = () => {
 
                 In conclusion, ALS Fintech is more than just a financial technology company; we are a catalyst for change. We believe in the democratization of finance and are dedicated to reshaping the way people interact with money. By combining cutting-edge solutions with a customer-first approach, we are paving the way for a brighter financial future for all. Join us on this journey towards financial freedom and unlock your true potential with ALS Fintech</p>
         </div>
+        </>
     )
 }
 

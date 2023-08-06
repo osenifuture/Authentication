@@ -1,8 +1,10 @@
-import Footer from "./footer";
+
 
 const Service = () => {
     return(
-    <Footer/>
+    <div>
+        
+    </div>
     )
 };
 export default Service;

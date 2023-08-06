@@ -1,6 +1,9 @@
 
 import "./home.css";
 import { Link } from "react-router-dom";
+
+
+
 const Home = () => {
   return (
     <>
@@ -59,8 +62,6 @@ const Home = () => {
         <Link to="/Price" className="more-link">
           <p>Click Here for More</p>
         </Link>
-
-  
     </>
   );
 };

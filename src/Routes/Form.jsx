@@ -15,7 +15,8 @@ const Form = () => {
   const [formField, setformField] = useState(defaultForm);
   const {fullName, address, phone, option, email, password, message, confirmpassword} = formField;
   const [error, setError] = useState(false);
-  const [show, setshow] = useState(false)
+  const [show1, setshow1] = useState(false)
+  const [show2, setshow2] = useState(false)
   const [success, setSuccess] = useState(false);
 
   const resetForm = () => {
@@ -29,8 +30,12 @@ const Form = () => {
     }, 3000)
   };
 
-  const handleShowpassword = () => {
-    setshow(!show)
+  const handleShowpassword1 = () => {
+    setshow1(!show1)
+  };
+
+  const handleShowpassword2 = () => {
+    setshow2(!show2)
   };
 
 
@@ -120,12 +125,12 @@ const Form = () => {
                 </select>
                     <textarea name="message" placeholder="BRIEF DESCRIPTION OF SERVICE THAT YOU WANT" value={message} onChange={handleChange} ></textarea>
                     <div className="pass">
-                <input  type={show ? "text"  : "password"} name="password" placeholder="PASSWORD" value={password} onChange={handleChange}  />
-                    <span onClick={handleShowpassword}>{ show ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i> }</span>
+                <input  type={show1 ? "text"  : "password"} name="password" placeholder="PASSWORD" value={password} onChange={handleChange}  />
+                    <span onClick={handleShowpassword1}>{ show1 ? <i className="fa-solid fa-eye-slash"></i> : <i className="fa-solid fa-eye"></i> }</span>
                     </div>
                     <div className="confirm-pass">
-                <input type={show ? "text" : "password"}  name="confirmpassword" placeholder="CONFIRM PASSWORD" value={confirmpassword} onChange={handleChange} />
-                <span onClick={handleShowpassword}>{ show ? <i className="fa-solid fa-eye-slash"></i>  : <i className="fa-solid fa-eye"></i> }</span>
+                <input type={show2 ? "text" : "password"}  name="confirmpassword" placeholder="CONFIRM PASSWORD" value={confirmpassword} onChange={handleChange} />
+                <span onClick={handleShowpassword2}>{ show2 ? <i className="fa-solid fa-eye-slash"></i>  : <i className="fa-solid fa-eye"></i> }</span>
                     </div>
                 {/* <span style={{display: "flex", }}>
                 <input type="checkbox" onClick={handleShowpassword}/> 
